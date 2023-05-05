@@ -1,0 +1,265 @@
+.calc{
+    width: 260px;
+    height: 500px;
+    margin: 50px auto;
+    border-radius: 20px;
+    background: black;
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    box-shadow: 10px 10px 10px rgb(93, 95, 95);
+}
+#btnAC{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: rgb(138, 140, 140);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btnPlusMinus{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(138, 140, 140);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btnPercent{
+    display: inline-block;
+
+   
+    width: 60px;
+    height: 60px;
+    background: rgb(138, 140, 140);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btnDivision{
+    display: inline-block;
+
+    left:850px;
+    top: 230px;
+    width: 60px;
+    height: 60px;
+    background: rgb(207, 119, 31);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn7{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn8{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn9{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btnmultiplication{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background:rgb(207, 119, 31);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn4{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn5{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn6{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btnMinus{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(207, 119, 31);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn1{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn2{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn3{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btnPlus{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(207, 119, 31);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btn0{
+    display: inline-block;
+
+    width: 120px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius:20px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btnDot{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(52, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#btnWillBe{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    background: rgb(207, 119, 31);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#zero{
+    width: 260px;
+    height: 75px;
+    font-size: 4rem;
+    text-align: right;
+}
