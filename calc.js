@@ -1,89 +1,114 @@
-var number1 = [];
-var number2 = [];
-var sign = undefined;
-var element = document.getElementById("btnEqual");
-element && element.addEventListener("click", equal);
+var firstnumber;
+var secondnumber = [];
+var userSign = undefined;
+var elEqual = document.getElementById("btnEqual");
+elEqual && elEqual.addEventListener("click", equal);
 function equal() {
-    var resultnumber1 = number1.join("") * 1;
-    var resultnumber2 = number2.join("") * 1;
-    if (sign == '+') {
-        result = resultnumber1 + resultnumber2;
-        document.getElementById("zero").textContent = result;
+    var resultnumber1 = firstnumber.map(Number);
+    var resultnumber2 = secondnumber.map(Number);
+    if (userSign == '+') {
+        var resultPlus = Number(resultnumber1) + Number(resultnumber2);
+        var element = document.getElementById("Output");
+        if (element) {
+            element.textContent = String(resultPlus);
+        }
     }
-    else if (sign == '-') {
-        result = resultnumber1 - resultnumber2;
-        document.getElementById("zero").textContent = result;
+    else if (userSign === '-') {
+        var resultMinus = Number(resultnumber1) - Number(resultnumber2);
+        var element = document.getElementById("Output");
+        if (element) {
+            element.textContent = String(resultMinus);
+        }
     }
-    else if (sign == 'x') {
-        result = sign * resultnumber2;
-        document.getElementById("zero").textContent = result;
+    else if (userSign === 'x') {
+        var resultMultiplication = Number(resultnumber1) * Number(resultnumber2);
+        var element = document.getElementById("Output");
+        if (element) {
+            element.textContent = String(resultMultiplication);
+        }
     }
-    else if (sign == '/') {
-        result = resultnumber1 / resultnumber2;
-        document.getElementById("zero").textContent = result;
-        number1 = result;
-        number2 = [];
+    else if (userSign === '/') {
+        var resultDivision = Number(resultnumber1) / Number(resultnumber2);
+        var element = document.getElementById("Output");
+        if (element) {
+            element.textContent = String(resultDivision);
+        }
     }
 }
-var element = document.getElementById("btnPlus");
-element && element.addEventListener("click", function () { return ChooseSign('+'); });
-var element = document.getElementById("btnMinus");
-element && element.addEventListener("click", function () { return ChooseSign('-'); });
-var element = document.getElementById("btnMultiplication");
-element && element.addEventListener("click", function () { return ChooseSign('x'); });
-var element = document.getElementById("btnDivision");
-element && element.addEventListener("click", function () { return ChooseSign('/'); });
-var element = document.getElementById("btnPlusMinus");
-element && element.addEventListener("click", countPlusMinus);
+var elPlus = document.getElementById("btnPlus");
+elPlus && elPlus.addEventListener("click", function () { return ChooseSign('+'); });
+var elMinus = document.getElementById("btnMinus");
+elMinus && elMinus.addEventListener("click", function () { return ChooseSign('-'); });
+var elMultiplication = document.getElementById("btnMultiplication");
+elMultiplication && elMultiplication.addEventListener("click", function () { return ChooseSign('x'); });
+var elDivision = document.getElementById("btnDivision");
+elDivision && elDivision.addEventListener("click", function () { return ChooseSign('/'); });
+var elPlusMinus = document.getElementById("btnPlusMinus");
+elPlusMinus && elPlusMinus.addEventListener("click", countPlusMinus);
 function countPlusMinus() {
-    if (number1[0] == "-") {
-        number1.shift();
-        document.getElementById("zero").textContent = number1.join("");
-        console.log(number1 + "num");
+    if (firstnumber[0] === "-") {
+        firstnumber.shift();
+        var element = document.getElementById("Output");
+        if (element) {
+            element.textContent = String(firstnumber.join(""));
+        }
+        console.log(firstnumber + "num");
     }
     else {
-        document.getElementById("zero").textContent = "-" + number1.join("");
-        number1.unshift("-");
-        console.log(number1 + "num");
+        var element = document.getElementById("Output");
+        if (element) {
+            element.textContent = String(firstnumber.join(""));
+        }
+        firstnumber.unshift("-");
+        console.log(firstnumber + "num");
     }
 }
-var element = document.getElementById("btnAC");
-element && element.addEventListener("click", countAC);
+var elAC = document.getElementById("btnAC");
+elAC && elAC.addEventListener("click", countAC);
 function countAC() {
-    document.getElementById("zero").textContent = "0";
-    number1 = [];
-    number2 = [];
+    var element = document.getElementById("Output");
+    if (element) {
+        element.textContent = String("0");
+    }
+    firstnumber = [];
+    secondnumber = [];
 }
-var element = document.getElementById("btn7");
-element && element.addEventListener("click", function () { return handlePress(7); });
-var element = document.getElementById("btn8");
-element && element.addEventListener("click", function () { return handlePress(8); });
-var element = document.getElementById("btn9");
-element && element.addEventListener("click", function () { return handlePress(9); });
-var element = document.getElementById("btn4");
-element && element.addEventListener("click", function () { return handlePress(4); });
-var element = document.getElementById("btn5");
-element && element.addEventListener("click", function () { return handlePress(5); });
-var element = document.getElementById("btn6");
-element && element.addEventListener("click", function () { return handlePress(6); });
-var element = document.getElementById("btn1");
-element && element.addEventListener("click", function () { return handlePress(1); });
-var element = document.getElementById("btn2");
-element && element.addEventListener("click", function () { return handlePress(2); });
-var element = document.getElementById("btn3");
-element && element.addEventListener("click", function () { return handlePress(3); });
-var el = document.getElementById("btn0");
-element && element.addEventListener("click", function () { return handlePress(0); });
+var el7 = document.getElementById("btn7");
+el7 && el7.addEventListener("click", function () { return handlePress(7); });
+var el8 = document.getElementById("btn8");
+el8 && el8.addEventListener("click", function () { return handlePress(8); });
+var el9 = document.getElementById("btn9");
+el9 && el9.addEventListener("click", function () { return handlePress(9); });
+var el4 = document.getElementById("btn4");
+el4 && el4.addEventListener("click", function () { return handlePress(4); });
+var el5 = document.getElementById("btn5");
+el5 && el5.addEventListener("click", function () { return handlePress(5); });
+var el6 = document.getElementById("btn6");
+el6 && el6.addEventListener("click", function () { return handlePress(6); });
+var el1 = document.getElementById("btn1");
+el1 && el1.addEventListener("click", function () { return handlePress(1); });
+var el2 = document.getElementById("btn2");
+el2 && el2.addEventListener("click", function () { return handlePress(2); });
+var el3 = document.getElementById("btn3");
+el3 && el3.addEventListener("click", function () { return handlePress(3); });
+var el0 = document.getElementById("btn0");
+el0 && el0.addEventListener("click", function () { return handlePress(0); });
 function handlePress(pressedNumber) {
-    if (sign === undefined) {
-        number1.push(pressedNumber);
-        document.getElementById("zero").textContent = number1.join("");
+    if (userSign === undefined) {
+        firstnumber.push(pressedNumber);
+        var element = document.getElementById("Output");
+        if (element) {
+            element.textContent = String(firstnumber.join(""));
+        }
     }
     else {
-        number2.push(pressedNumber);
-        document.getElementById("zero").textContent = number2.join("");
+        secondnumber.push(pressedNumber);
+        var element = document.getElementById("Output");
+        if (element) {
+            element.textContent = String(secondnumber.join(""));
+        }
     }
 }
 function ChooseSign(pressedSign) {
-    sign = pressedSign;
+    userSign = pressedSign;
 }

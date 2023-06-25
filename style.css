@@ -1,128 +1,39 @@
-.calc{
-    width: 260px;
-    height: 500px;
-    margin: 50px auto;
-    border-radius: 20px;
-    background: black;
-    color: rgb(255, 255, 255);
-    padding: 18px;
-    box-shadow: 10px 10px 10px rgb(93, 95, 95);
+.calc {
+  width: 260px;
+  height: 500px;
+  margin: 50px auto;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  padding: 18px;
+  box-shadow: 10px 10px 10px rgb(93, 95, 95);
 }
-.btn{
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 60px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    user-select: none;
+.color-darkgray {
+  background: rgb(52, 53, 53);
 }
-#btnAC{
-    
-    
-    
-    background: rgb(138, 140, 140);
-    
+.color-gray {
+  background: rgb(138, 140, 140);
 }
-#btnPlusMinus{
-    
-    background: rgb(138, 140, 140);
-   
+.color-orange {
+  background: rgb(207, 119, 31);
 }
-#btnPercent{
-   
-    background: rgb(138, 140, 140);
-    
+.btn {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  cursor: pointer;
 }
-#btnDivision{
-    
-    background: rgb(207, 119, 31);
-    
+#btn0 {
+  width: 120px;
+  border-radius: 20px;
 }
-#btn7{
-    
-    background: rgb(52, 53, 53);
-    
-}
-#btn8{
-   
-    background: rgb(52, 53, 53);
-    
-}
-#btn9{
-   
-    background: rgb(52, 53, 53);
-  
-}
-#btnMultiplication{
-   
-    background:rgb(207, 119, 31);
-  
-}
-#btn4{
-  
-    background: rgb(52, 53, 53);
-  
-}
-#btn5{
-  
-    background: rgb(52, 53, 53);
-   
-}
-#btn6{
-  
-    background: rgb(52, 53, 53);
-    
-}
-#btnMinus{
-   
-    background: rgb(207, 119, 31);
-   
-}
-#btn1{
-   
-    background: rgb(52, 53, 53);
-   
-}
-#btn2{
-  
-    background: rgb(52, 53, 53);
- 
-}
-#btn3{
-  
- 
-    background: rgb(52, 53, 53);
-    
-}
-#btnPlus{
-    
-    background: rgb(207, 119, 31);
-   
-}
-#btn0{
-    
-    width: 120px;
-    height: 60px;
-    background: rgb(52, 53, 53);
-    border-radius:20px;
-   
-}
-#btnDot{
-
-    background: rgb(52, 53, 53);
-   
-}
-#btnEqual{
-  
-    background: rgb(207, 119, 31);
-  
-}
-#zero{
-    width: 260px;
-    height: 75px;
-    font-size: 4rem;
-    text-align: right;
+#Output {
+  width: 260px;
+  height: 75px;
+  font-size: 4rem;
+  text-align: right;
 }
